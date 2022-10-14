@@ -1,22 +1,45 @@
+ymaps.ready(init);
 var myMap;
 
-// Waiting for the API to load and DOM to be ready.
-ymaps.ready(init);
-
 function init () {
-    /**
-     * Creating an instance of the map and binding it to the container
-     * with the specified ID ("map").
-     */
-    myMap = new ymaps.Map('map', {
-        /**
-         * When initializing the map, you must specify
-         * its center and the zoom factor.
-         */
-        center: [55.76, 37.64], // Moscow
-        zoom: 10
+    myMap = new ymaps.Map("map", {
+        center: [57.5262, 38.3061], // Углич
+        zoom: 11
     }, {
+        balloonMaxWidth: 200,
         searchControlProvider: 'yandex#search'
     });
 
+    // Обработка события, возникающего при щелчке
+    // левой кнопкой мыши в любой точке карты.
+    // При возникновении такого события откроем балун.
+    myMap.events.add('click', function (e) {
+        if (!myMap.balloon.isOpen()) {
+            var coords = e.get('coords');
+            myMap.balloon.open(coords, {
+                contentBody:
+                    '<p>Ваши координаты: ' + [
+                        coords[0].toPrecision(6),
+                        coords[1].toPrecision(6)
+                    ].join(', ') + '</p>',
+                contentFooter:'<sup>Щелкните еще раз</sup>'
+            });
+        }
+        else {
+            myMap.balloon.close();
+        }
+    });
+
+    // Обработка события, возникающего при щелчке
+    // правой кнопки мыши в любой точке карты.
+    // При возникновении такого события покажем всплывающую подсказку
+    // в точке щелчка.
+    myMap.events.add('contextmenu', function (e) {
+        myMap.hint.open(e.get('coords'), 'Кто-то щелкнул правой кнопкой');
+    });
+
+    // Скрываем хинт при открытии балуна.
+    myMap.events.add('balloonopen', function (e) {
+        myMap.hint.close();
+    });
 }
