@@ -10,9 +10,6 @@ function init () {
         searchControlProvider: 'yandex#search'
     });
 
-    // Обработка события, возникающего при щелчке
-    // левой кнопкой мыши в любой точке карты.
-    // При возникновении такого события откроем балун.
     myMap.events.add('click', function (e) {
         if (!myMap.balloon.isOpen()) {
             var coords = e.get('coords');
@@ -30,15 +27,10 @@ function init () {
         }
     });
 
-    // Обработка события, возникающего при щелчке
-    // правой кнопки мыши в любой точке карты.
-    // При возникновении такого события покажем всплывающую подсказку
-    // в точке щелчка.
     myMap.events.add('contextmenu', function (e) {
         myMap.hint.open(e.get('coords'), 'Кто-то щелкнул правой кнопкой');
     });
 
-    // Скрываем хинт при открытии балуна.
     myMap.events.add('balloonopen', function (e) {
         myMap.hint.close();
     });
