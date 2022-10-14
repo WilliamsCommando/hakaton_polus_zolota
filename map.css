@@ -58,6 +58,7 @@ body, html {
     background: white;
     font-size: 0.65em;
     font-family: Helvetica;
+    padding-top: 50px;
 }
 
 h1 {
@@ -66,4 +67,31 @@ h1 {
     font-size:30px;
     font-weight: 100;
     font-weight: lighter;
+}
+
+label {
+    cursor: pointer;
+    display: block;
+}
+
+.field + .field {
+    margin-top: 20px;
+}
+
+.field > label {
+    margin-bottom: 5px;
+}
+
+input[type=text] {
+    width: 250px;
+    padding: 12px 20px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #A2A1A6;
+    display:block;
+    font-size: 200.1%;
+    font-weight: lighter;
+    outline: none;
+    padding-top: 40px;
 }
