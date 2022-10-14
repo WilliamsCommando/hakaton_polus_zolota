@@ -8,6 +8,10 @@ body{
     height:100vh;
     overflow:hidden;
     background-color: #eeae44;
+    background-image: url("img_3.png");
+    width: 100%;
+    border-spacing: 0;
+    background-repeat: round;
 }
 
 .inner {
@@ -16,9 +20,9 @@ body{
 
 .inner-container{
     width:400px;
-    height:570px;
+    height: 650px;
     position:absolute;
-    top:calc(50vh - 250px);
+    top:calc(50vh - 300px);
     left:calc(50vw - 200px);
     overflow:hidden;
 }
@@ -30,9 +34,8 @@ body{
     font-family: Helvetica;
     font-weight: lighter;
     color: #1a1e21;
-    background: #ffffff;
+    background: rgb(255, 255, 255, 0.9);
     padding:30px 0px;
-    border-radius: 5px;
 }
 
 .box h1{
@@ -50,6 +53,7 @@ body{
     border: 1px solid #A2A1A6;
     border-radius: 3px;
     font-weight: 100;
+    opacity: .9;
 }
 
 .box img{
@@ -88,4 +92,49 @@ body{
 .box p span{
     cursor:pointer;
     color:#666;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header img {
+    width: 140px;
+    height: 30px;
+}
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+    background-color: #eeae44;
+    color: black;
+}
+
+/* Float the link section to the right */
+.header-right {
+    float: right;
 }
