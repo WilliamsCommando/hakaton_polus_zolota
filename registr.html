@@ -19,19 +19,24 @@
     </div>
 </div>
 
-<div class="vid-container">
-    <div class="inner-container">
-        <div class="box">
-            <img src="./images/img.png">
-            <h1>Регистрация</h1>
-            <input type="text" placeholder="Введите почту"/>
-            <input type="text" placeholder="Введите номер телефона"/>
-            <input type="text" placeholder="Введите пароль"/>
-            <input type="text" placeholder="Подтвердите пароль"/>
-            <button>Продолжить</button>
-            <a href="login.html"><p><span>Войти</span></p></a>
+<form action="#" method="#" id="form">
+    <div class="vid-container">
+        <div class="inner-container">
+            <div class="box">
+                <img src="./images/img.png">
+                <h1>Регистрация</h1>
+                <input type="text" name="email" placeholder="Введите почту"/>
+                <input type="text" name="number" placeholder="Введите номер телефона"/>
+                <input type="text" name="password" placeholder="Введите пароль"/>
+                <input type="text" name="repeat_password" placeholder="Подтвердите пароль"/>
+                <button type="submit">Продолжить</button>
+                <a href="login.html"><p><span>Войти</span></p></a>
+            </div>
         </div>
     </div>
-</div>
+</form>
+
+<script src="registration.js"></script>
+
 </body>
 </html>
