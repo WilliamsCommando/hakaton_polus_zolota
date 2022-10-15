@@ -1,11 +1,3 @@
-@font-face {
-    font-family: 'Stem Regular';
-    src: local('Stem Regular'),
-    url("./fonts/Stem-Regular.otf");
-}
-
-
-
 body{
     padding:0;
     margin:0;
@@ -80,7 +72,7 @@ body{
     padding: 10px;
     font-size:20px;
     width:200px;
-    margin: 35px auto;
+    margin: 20px auto;
     display:block;
     cursor:pointer;
     border-radius: 2px;

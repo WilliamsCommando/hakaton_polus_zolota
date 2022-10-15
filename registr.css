@@ -59,7 +59,7 @@ body{
 
 .box img{
     display: block;
-    margin: 10px auto;
+    margin: auto;
 }
 
 .box input:focus,.box input:active,.box button:focus,.box button:active{
