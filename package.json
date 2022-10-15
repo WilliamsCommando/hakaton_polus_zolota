@@ -1,5 +1,20 @@
 {
-  "dependencies": {
-    "bootstrap": "^5.2.2"
-  }
+  "name": "hakaton_login_registration_form",
+  "version": "1.0.0",
+  "description": "Ссылка на yeandex cloud сайта: http://flatlyxsoft.online.website.yandexcloud.net/",
+  "main": "calendar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilliamsCommando/hakaton_login_registration_form.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WilliamsCommando/hakaton_login_registration_form/issues"
+  },
+  "homepage": "https://github.com/WilliamsCommando/hakaton_login_registration_form#readme"
 }
