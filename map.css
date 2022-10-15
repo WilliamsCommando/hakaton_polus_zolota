@@ -106,9 +106,9 @@ input[type=text] {
 .time {
     border: 0;
     padding-top: 30px;
-    margin:20px 30px;
     font-size: 20px;
-    word-spacing: 5px;
+    text-align: center;
+    margin: 30px 0;
 }
 
 .wrapper {
@@ -267,4 +267,36 @@ input[type=text] {
 
 .modal-content {
     padding: 20px;
+}
+
+.caln {
+    cursor: pointer;
+    font-weight: lighter;
+    background-color: transparent;
+    border: hidden;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.choose {
+    text-align: center;
+    margin: 30px 0;
+    position: static;
+}
+
+.choose a{
+    text-decoration: none;
+    background-color: #fff;
+    color: black;
+}
+
+.choose button {
+    position: static;
+}
+
+.choose img {
+    width: 30px;
+    height: 30px;
 }

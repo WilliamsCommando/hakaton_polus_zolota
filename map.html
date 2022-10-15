@@ -110,14 +110,18 @@
                 </div>
                 <div class="time">
                     <a>Дата заказа:</a>
+                    <div class="choose">
+                        <a href="#now">Сейчас</a>
+                        <a>|</a>
+                        <button class ="caln" id="calendare" onclick="calend()">
+                            <img src="./images/img_6.png"/>
+                        </button>
+                        <button class ="caln" id="calend_yelloy"; style="display:none" onclick="calend_yelloy()">
+                            <img src="./images/img_6.png"/>
+                        </button>
                     </div>
-<!--                    <div class="wrapper" id="calenda">-->
-<!--                        <button id="calendare" onclick="calend()">-->
-<!--                            <img src="./images/img_6.png" height ="40" width="40" />-->
-<!--                        </button>-->
-<!--                        <button id="calend_yelloy"; style="display:none" onclick="calend_yelloy()">-->
-<!--                            <img src="./images/img_6.png" height ="40" width="40" />-->
-<!--                        </button>-->
+                    </div>
+                    <div class="wrapper" id="calend_hide" style="display:none">
                         <div class="container-calendar">
                             <h3 id="monthAndYear"></h3>
                             <div class="button-container-calendar">
