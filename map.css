@@ -63,28 +63,14 @@ body, html {
 
 h1 {
     text-align:center;
-    margin:30px 0;
+    margin: 30px 0;
     font-size:30px;
-    font-weight: 100;
-    font-weight: lighter;
-}
-
-label {
-    cursor: pointer;
-    display: block;
-}
-
-.field + .field {
-    margin-top: 20px;
-}
-
-.field > label {
-    margin-bottom: 5px;
+    font-weight: 50;
 }
 
 input[type=text] {
     width: 250px;
-    padding: 12px 20px;
+    padding: 40px 20px 12px 20px;
     margin: 0px auto;
     box-sizing: border-box;
     border: none;
@@ -93,5 +79,34 @@ input[type=text] {
     font-size: 200.1%;
     font-weight: lighter;
     outline: none;
+}
+
+.cars_cards {
     padding-top: 40px;
+}
+
+.cars_cards button {
+    border:0;
+    padding:10px;
+    font-size:20px;
+    width:90%;
+    height: 80px;
+    margin:20px auto;
+    display:block;
+    cursor:pointer;
+    border-radius: 2px;
+    font-weight: lighter;
+}
+
+.cars_cards button a {
+    text-align: right;
+}
+
+.time {
+    border: 0;
+    padding-top: 30px;
+    word-spacing: 60px;
+    margin:20px 30px;
+    font-size: 20px;
+    padding-bottom: 30px;
 }

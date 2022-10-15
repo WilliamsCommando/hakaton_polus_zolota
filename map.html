@@ -13,11 +13,11 @@
 
 <body>
     <div class="header">
-        <a href="#default" class="logo"><img src="img_2.png" /></a>
+        <a href="#default" class="logo"><img src="./images/img_2.png" /></a>
         <div class="header-right">
             <a href="#map">Карта</a>
             <a href="#about">Поддержка</a>
-            <a href="#lol">Создать заказ</a>
+            <a href="#lol">Заказы</a>
             <a class="active" href="login.html">Аккаунт</a>
         </div>
     </div>
@@ -26,10 +26,32 @@
             <h1>Заказ</h1>
             <div class ="coordinats">
                 <input type="text" id="fname" name="fname" placeholder="Точка заказа">
-                    <a class="nav-link" href="#">Link</a>
-                    <a class="nav-link" href="#">Link</a>
-                    <a class="nav-link disabled">Disabled</a>
             </div>
+            <div class="cars_cards">
+<!--                <a>карточки</a>-->
+                <button class="first_card" id="truck">
+                    <img src="./images/img_1.png" height ="50" width="75" />
+                    <a>Автовышка</a>
+                </button>
+                <button id="lefttruck">
+                    <img src="./images/img_4.png" height ="40" width="80" />
+                    <a>Кран</a>
+                </button>
+                <button id="righttruck">
+                    <img src="./images/img_5.png" height =50" width="70" />
+                    <a>Погрузчик</a>
+                </button>
+            </div>
+            <div class="parametrs">
+            </div>
+            <div class="time">
+                <a>Время: Сейчас</a>
+            </div>
+            <div class="calendar">
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="button" class="btn btn-warning">Заказать</button>
+                </div>
         </div>
     </div>
     <div id="map"></div>

@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Stem Regular';
+    src: local('Stem Regular'),
+    url("./fonts/Stem-Regular.otf");
+}
+
+
+
 body{
     padding:0;
     margin:0;
@@ -7,11 +15,11 @@ body{
     position:relative;
     height:100vh;
     overflow:hidden;
-    background-color: #eeae44;
-    background-image: url("img_3.png");
+    background-image: url("./images/img_3.png");
     width: 100%;
     border-spacing: 0;
     background-repeat: round;
+    border: rgb(0,0,0, 0.9);
 }
 
 .inner {
@@ -34,8 +42,9 @@ body{
     font-family: Helvetica;
     font-weight: lighter;
     color: #1a1e21;
-    background: rgb(255, 255, 255, 0.9);
+    background: rgb(255, 255, 255, 0.6);
     padding:30px 0px;
+    backdrop-filter: blur(3px);
 }
 
 .box h1{
@@ -58,8 +67,7 @@ body{
 
 .box img{
     display: block;
-    margin-left: auto;
-    margin-right: auto
+    margin: 10px auto;
 }
 
 .box input:focus,.box input:active,.box button:focus,.box button:active{
@@ -70,10 +78,10 @@ body{
     background:#1a1e21;
     border:0;
     color:#fff;
-    padding:10px;
+    padding: 10px;
     font-size:20px;
     width:200px;
-    margin:20px auto;
+    margin: 35px auto;
     display:block;
     cursor:pointer;
     border-radius: 2px;
