@@ -1,7 +1,8 @@
 const form = document.getElementById('form');
+
 function getFormValue(event) {
     event.preventDefault();
-    const fields = document.querySelectorAll('input, select, text, textarea');
+    const fields = document.querySelectorAll('input, select, text, textarea, email');
     const values = {};
     fields.forEach(field => {
         const {name, value} = field;
@@ -9,4 +10,5 @@ function getFormValue(event) {
     });
     console.log(values);
 }
+
 form.addEventListener('submit', getFormValue);
