@@ -86,7 +86,7 @@ input[type=text] {
 }
 
 .cars_cards button {
-    border:0;
+    border: 1px solid #A2A1A6;
     padding:10px;
     font-size:20px;
     width:90%;
@@ -94,8 +94,9 @@ input[type=text] {
     margin:20px auto;
     display:block;
     cursor:pointer;
-    border-radius: 2px;
     font-weight: lighter;
+    border-radius: 10px;
+    background-color: transparent;
 }
 
 .cars_cards button a {
