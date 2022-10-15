@@ -105,10 +105,9 @@ input[type=text] {
 .time {
     border: 0;
     padding-top: 30px;
-    word-spacing: 60px;
     margin:20px 30px;
     font-size: 20px;
-    padding-bottom: 30px;
+    word-spacing: 5px;
 }
 
 .wrapper {
