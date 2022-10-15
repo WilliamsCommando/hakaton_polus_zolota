@@ -201,3 +201,74 @@ input[type=text] {
     border-radius: 3px;
     padding: 5px 1em;
 }
+
+.modal-form-row {
+    margin-bottom: 0px;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    min-width: 60px;
+    padding: 8px 15px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background: #6b6;
+    transition: color .1s ease;
+}
+
+.btn:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.grey {
+    background: grey;
+    box-shadow: 0 2px 0 #666;
+}
+
+.red {
+    background: #d94134;
+    box-shadow: 0 2px 0 #ab3329;
+}
+
+.btn.btn-big {
+    min-width: 100px;
+    padding: 15px 20px;
+    font-size: 18px;
+}
+
+.btn-close {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    text-decoration: none;
+    color: #aaaaaa;
+    font-size: 30px;
+}
+
+.btn-close:hover {
+    color: #919191;
+}
+
+.modal {
+    position: absolute;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    overflow:hidden;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.25);
+    margin: auto;
+    min-height: 100vh;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.modal-content button {
+
+}
