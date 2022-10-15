@@ -111,14 +111,19 @@
                 <div class="time">
                     <a>Дата заказа:</a>
                     </div>
-                    <div class="wrapper">
+<!--                    <div class="wrapper" id="calenda">-->
+<!--                        <button id="calendare" onclick="calend()">-->
+<!--                            <img src="./images/img_6.png" height ="40" width="40" />-->
+<!--                        </button>-->
+<!--                        <button id="calend_yelloy"; style="display:none" onclick="calend_yelloy()">-->
+<!--                            <img src="./images/img_6.png" height ="40" width="40" />-->
+<!--                        </button>-->
                         <div class="container-calendar">
                             <h3 id="monthAndYear"></h3>
                             <div class="button-container-calendar">
                                 <button id="previous" onclick="previous()">&#8249;</button>
                                 <button id="next" onclick="next()">&#8250;</button>
                             </div>
-
                             <table class="table-calendar" id="calendar" data-lang="en">
                                 <thead id="thead-month"></thead>
                                 <tbody id="calendar-body"></tbody>
@@ -183,6 +188,16 @@
             document.getElementById("done_hide").setAttribute("style", "display: none");
             document.getElementById("done_yelloy").setAttribute("style", "display: none");
             document.getElementById("righttruck").setAttribute("style", "display: block");
+        }
+        function calend() {
+            document.getElementById("calend_hide").setAttribute("style", "opacity:1; transition: 1s; height: 100%;");
+            document.getElementById("calendare").setAttribute("style", "display: none");
+            document.getElementById("calend_yelloy").setAttribute("style", "display: block");
+        }
+        function calend_yelloy() {
+            document.getElementById("calend_hide").setAttribute("style", "display: none");
+            document.getElementById("calend_yelloy").setAttribute("style", "display: none");
+            document.getElementById("calendare").setAttribute("style", "display: block");
         }
     </script>
 
