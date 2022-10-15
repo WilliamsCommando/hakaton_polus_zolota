@@ -28,20 +28,64 @@
                 <input type="text" id="fname" name="fname" placeholder="Точка заказа">
             </div>
             <div class="cars_cards">
-                <button class="first_card" id="truck">
+                <div class="click_one">
+                <button class="first_card" id="truck" onclick="first()">
                     <img src="./images/img_1.png" height ="50" width="75" />
-                    <a>Автовышка</a>
-                </button>
-                <button id="lefttruck">
+                    <a>Автовышка</a></button>
+                    <button id="first_yelloy"; style="display:none" onclick="first_yelloy()">
+                        <img src="./images/img_1.png" height ="50" width="75" />
+                        <a>Автовышка</a></button>
+                    </button>
+                    <div id="second_hide" style="display:none">
+                        <button>
+                            <a>Параметр 1</a>
+                        </button>
+                        <button>
+                            <a>Параметр 2</a>
+                        </button>
+                        <button>
+                            <a>Параметр 3</a>
+                        </button>
+                    </div>
+                </div>
+                <button id="lefttruck" onclick="second()">
                     <img src="./images/img_4.png" height ="40" width="80" />
                     <a>Кран</a>
                 </button>
-                <button id="righttruck">
+                <button id="second_yelloy"; style="display:none" onclick="second_yelloy()">
+                    <img src="./images/img_4.png" height ="40" width="80" />
+                    <a>Кран</a>
+                </button>
+                <div id="three_hide" style="display:none">
+                    <button>
+                        <a>Параметр 1</a>
+                    </button>
+                    <button>
+                        <a>Параметр 2</a>
+                    </button>
+                    <button>
+                        <a>Параметр 3</a>
+                    </button>
+                </div>
+                <button id="righttruck" onclick="done()">
                     <img src="./images/img_5.png" height =50" width="70" />
                     <a>Погрузчик</a>
                 </button>
-            </div>
-            <div class="parametrs">
+                <button id="done_yelloy"; style="display:none" onclick="done_yelloy()">
+                    <img src="./images/img_5.png" height =50" width="70" />
+                    <a>Погрузчик</a>
+                </button>
+                <div id="done_hide" style="display:none">
+                    <button>
+                        <a>Параметр 1</a>
+                    </button>
+                    <button>
+                        <a>Параметр 2</a>
+                    </button>
+                    <button>
+                        <a>Параметр 3</a>
+                    </button>
+                </div>
             </div>
             <div class="time">
                 <a>Время заказа:</a>
@@ -49,7 +93,6 @@
                 <div class="wrapper">
                     <div class="container-calendar">
                         <h3 id="monthAndYear"></h3>
-
                         <div class="button-container-calendar">
                             <button id="previous" onclick="previous()">&#8249;</button>
                             <button id="next" onclick="next()">&#8250;</button>
@@ -59,7 +102,6 @@
                             <thead id="thead-month"></thead>
                             <tbody id="calendar-body"></tbody>
                         </table>
-
                         <div class="footer-container-calendar">
                             <label for="month">Jump To: </label>
                             <select id="month" onchange="jump()">
@@ -87,6 +129,42 @@
     </div>
     <div id="map"></div>
 <script type="text/javascript" src="calendar.js"></script>
+    <script>
+        function first() {
+            document.getElementById("second_hide").setAttribute("style", "opacity:1; transition: 1s; height: 100%;");
+            document.getElementById("truck").setAttribute("style", "display: none");
+            document.getElementById("first_yelloy").setAttribute("style", "display: block");
+        }
+        function first_yelloy() {
+            document.getElementById("second_hide").setAttribute("style", "display: none");
+            document.getElementById("first_yelloy").setAttribute("style", "display: none");
+            document.getElementById("truck").setAttribute("style", "display: block");
+        }
+    </script>
+    <script>
+        function second() {
+            document.getElementById("three_hide").setAttribute("style", "opacity:1; transition: 1s; height: 100%;");
+            document.getElementById("lefttruck").setAttribute("style", "display: none");
+            document.getElementById("second_yelloy").setAttribute("style", "display: block");
+        }
+        function second_yelloy() {
+            document.getElementById("three_hide").setAttribute("style", "display: none");
+            document.getElementById("second_yelloy").setAttribute("style", "display: none");
+            document.getElementById("lefttruck").setAttribute("style", "display: block");
+        }
+    </script>
+    <script>
+        function done() {
+            document.getElementById("done_hide").setAttribute("style", "opacity:1; transition: 1s; height: 100%;");
+            document.getElementById("righttruck").setAttribute("style", "display: none");
+            document.getElementById("done_yelloy").setAttribute("style", "display: block");
+        }
+        function done_yelloy() {
+            document.getElementById("done_hide").setAttribute("style", "display: none");
+            document.getElementById("done_yelloy").setAttribute("style", "display: none");
+            document.getElementById("righttruck").setAttribute("style", "display: block");
+        }
+    </script>
 </body>
 
 </html>
