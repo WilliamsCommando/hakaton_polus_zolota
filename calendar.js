@@ -14,9 +14,6 @@ selectMonth = document.getElementById("month");
 
 
 createYear = generate_year_range(1970, 2050);
-/** or
- * createYear = generate_year_range( 1970, currentYear );
- */
 
 document.getElementById("year").innerHTML = createYear;
 
@@ -33,15 +30,6 @@ var dayDefault = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 if (lang == "en") {
     months = monthDefault;
     days = dayDefault;
-} else if (lang == "id") {
-    months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
-    days = ["Ming", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"];
-} else if (lang == "fr") {
-    months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
-    days = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"];
-} else {
-    months = monthDefault;
-    days = dayDefault;
 }
 
 
@@ -50,11 +38,7 @@ for (dhead in days) {
     $dataHead += "<th data-days='" + days[dhead] + "'>" + days[dhead] + "</th>";
 }
 $dataHead += "</tr>";
-
-//alert($dataHead);
 document.getElementById("thead-month").innerHTML = $dataHead;
-
-
 monthAndYear = document.getElementById("monthAndYear");
 showCalendar(currentMonth, currentYear);
 
@@ -79,26 +63,15 @@ function jump() {
 }
 
 function showCalendar(month, year) {
-
     var firstDay = ( new Date( year, month ) ).getDay();
-
     tbl = document.getElementById("calendar-body");
-
-
     tbl.innerHTML = "";
-
-
     monthAndYear.innerHTML = months[month] + " " + year;
     selectYear.value = year;
     selectMonth.value = month;
-
-    // creating all cells
     var date = 1;
     for ( var i = 0; i < 6; i++ ) {
-
         var row = document.createElement("tr");
-
-
         for ( var j = 0; j < 7; j++ ) {
             if ( i === 0 && j < firstDay ) {
                 cell = document.createElement( "td" );
@@ -122,13 +95,9 @@ function showCalendar(month, year) {
                 row.appendChild(cell);
                 date++;
             }
-
-
         }
-
         tbl.appendChild(row);
     }
-
 }
 
 function daysInMonth(iMonth, iYear) {
