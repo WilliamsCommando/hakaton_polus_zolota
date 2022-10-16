@@ -1,4 +1,5 @@
 const form = document.getElementById('form');
+const orderForm = document.getElementById('orderForm');
 
 function getFormValue(event) {
     event.preventDefault();
@@ -12,3 +13,4 @@ function getFormValue(event) {
 }
 
 form.addEventListener('submit', getFormValue);
+orderForm.addEventListener('submit', getFormValue);
