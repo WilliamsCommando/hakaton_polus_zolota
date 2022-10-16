@@ -85,7 +85,9 @@ input[type=text] {
     padding-top: 40px;
 }
 
-.cars_cards button {
+
+.cars_cards button,
+.auto-types {
     border: 1px solid #A2A1A6;
     padding:10px;
     font-size:20px;
@@ -97,6 +99,16 @@ input[type=text] {
     font-weight: lighter;
     border-radius: 10px;
     background-color: transparent;
+}
+
+.auto-types {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auto-types label {
+    padding-left: 1rem;
 }
 
 .cars_cards button a {
@@ -300,4 +312,8 @@ input[type=text] {
 .choose img {
     width: 30px;
     height: 30px;
+}
+
+.hide {
+    display: none;
 }

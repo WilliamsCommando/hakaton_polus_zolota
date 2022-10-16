@@ -3,7 +3,7 @@ var myMap;
 
 function init () {
     myMap = new ymaps.Map("map", {
-        center: [57.5262, 38.3061], // Углич
+        center: [54.710162, 20.510137], // Калининград
         zoom: 11
     }, {
         balloonMaxWidth: 200,

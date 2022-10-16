@@ -99,7 +99,6 @@ body{
     padding: 20px 10px;
 }
 
-/* Style the header links */
 .header a {
     float: left;
     color: black;
@@ -115,25 +114,22 @@ body{
     width: 140px;
     height: 30px;
 }
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+
 .header a.logo {
     font-size: 25px;
     font-weight: bold;
 }
 
-/* Change the background color on mouse-over */
 .header a:hover {
     background-color: #fff;
     color: black;
 }
 
-/* Style the active/current link*/
 .header a.active {
     background-color: #eeae44;
     color: black;
 }
 
-/* Float the link section to the right */
 .header-right {
     float: right;
 }
